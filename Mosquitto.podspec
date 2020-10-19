@@ -15,15 +15,7 @@ Pod::Spec.new do |s|
                  'GCC_PREPROCESSOR_DEFINITIONS' => 'WITH_THREADING=1'
                 }
   s.source_files = ['lib/*.{c,h}', '*.h', 'src/deps/*.h']
-
-  s.subspec 'WithoutTLS' do |sp|
-    sp.source_files = ['lib/*.{c,h}', '*.h']
-  end
-
-  s.subspec 'TLS' do |sp|
-    sp.xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => 'WITH_TLS=1' }
-    sp.source_files = ['lib/*.{c,h}', '*.h']
-    sp.dependency 'OpenSSL-Universal', '~> 1.0.1.19'
-  end
+  s.xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => 'WITH_TLS=1' }
+  s.dependency 'GRKOpenSSLFramework', '~> 1.0.2'
   
 end
