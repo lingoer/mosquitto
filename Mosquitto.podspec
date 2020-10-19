@@ -9,6 +9,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => "https://github.com/eclipse/mosquitto.git", :tag => "v1.6.12" }
 
   s.ios.deployment_target = '6.0'
+  s.static_framework = true
   s.xcconfig = { 'HEADER_SEARCH_PATHS' => '${PODS_ROOT}/**', 
                  'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
                  'GCC_PREPROCESSOR_DEFINITIONS' => 'WITH_THREADING=1'
