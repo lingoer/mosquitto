@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
                  'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
                  'GCC_PREPROCESSOR_DEFINITIONS' => 'WITH_THREADING=1'
                 }
-  s.source_files = ['lib/*.{c,h}', '*.h']
+  s.source_files = ['lib/*.{c,h}', '*.h', 'src/deps/*.h']
 
   s.subspec 'WithoutTLS' do |sp|
     sp.source_files = ['lib/*.{c,h}', '*.h']
