@@ -9,13 +9,13 @@ Pod::Spec.new do |s|
   s.source           = { :git => "https://github.com/eclipse/mosquitto.git", :tag => "v1.6.12" }
 
   s.ios.deployment_target = '6.0'
-  #s.static_framework = true
+ #s.static_framework = true
   s.xcconfig = { 'HEADER_SEARCH_PATHS' => '${PODS_ROOT}/**', 
                  'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
                  'GCC_PREPROCESSOR_DEFINITIONS' => 'WITH_THREADING=1'
                 }
   s.source_files = ['lib/*.{c,h}', '*.h', 'src/deps/*.h']
   s.xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => 'WITH_TLS=1' }
-#  s.dependency 'OpenSSL-Universal', '~> 1.0.2'
+  s.dependency 'openssl-apple-platform', '~> 1.0.2r'
   
 end
