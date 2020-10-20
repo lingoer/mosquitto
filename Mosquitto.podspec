@@ -16,6 +16,6 @@ Pod::Spec.new do |s|
                 }
   s.source_files = ['lib/*.{c,h}', '*.h', 'src/deps/*.h']
   s.xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => 'WITH_TLS=1' }
-  s.dependency 'OpenSSL-Universal', '~> 1.0.2'
+#  s.dependency 'OpenSSL-Universal', '~> 1.0.2'
   
 end
