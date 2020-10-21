@@ -1,5 +1,5 @@
 framework module Mosquitto {
-  umbrella header "mosquitto.h"
+  umbrella header "lib/mosquitto.h"
 
   export *
   module * { export * }
