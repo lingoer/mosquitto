@@ -10,10 +10,10 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '11.0'
 #  s.static_framework = true
-#  s.xcconfig = { 'HEADER_SEARCH_PATHS' => '${PODS_ROOT}/**'
-#                 'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES'
-#                 'GCC_PREPROCESSOR_DEFINITIONS' => 'WITH_THREADING=1'
-#                }
+  s.xcconfig = { 'HEADER_SEARCH_PATHS' => '${PODS_ROOT}/**'
+                 'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES'
+                 'GCC_PREPROCESSOR_DEFINITIONS' => 'WITH_THREADING=1'
+               }
   s.source_files = ['*.h', 'lib/*.{c,h}', 'src/deps/*.h']
   s.public_header_files = ['lib/mosquitto.h']
   s.module_map = 'module.modulemap'
