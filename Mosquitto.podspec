@@ -15,6 +15,7 @@ Pod::Spec.new do |s|
 #                 'GCC_PREPROCESSOR_DEFINITIONS' => 'WITH_THREADING=1'
                 }
   s.source_files = ['*.h', 'lib/*.{c,h}', 'src/deps/*.h']
+  s.public_header_files = ['lib/mosquitto.h']
   s.module_map = 'module.modulemap'
 #  s.xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => 'WITH_TLS=1 WITH_THREADING=1' }
 #  s.dependency 'openssl-apple-platform', '~> 1.0.2r'
