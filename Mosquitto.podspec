@@ -6,10 +6,10 @@ Pod::Spec.new do |s|
   s.homepage         = "https://github.com/eclipse/mosquitto"
   s.license          = 'This project is dual licensed under the Eclipse Public License 1.0 and the Eclipse Distribution License 1.0 as described in the epl-v10 and edl-v10 files.'
   s.author           = { "Eclipse Foundation" => "emo@eclipse.org" }
-  s.source           = { :git => "https://github.com/eclipse/mosquitto.git", :tag => "v1.6.12" }
+  s.source           = { :git => "https://github.com/lingoer/mosquitto.git", :tag => "v1.6.12" }
 
   s.ios.deployment_target = '6.0'
-  s.static_framework = true
+#  s.static_framework = true
   s.xcconfig = { 'HEADER_SEARCH_PATHS' => '${PODS_ROOT}/**', 
                  'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES'
 #                 'GCC_PREPROCESSOR_DEFINITIONS' => 'WITH_THREADING=1'
