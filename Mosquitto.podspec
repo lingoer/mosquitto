@@ -9,6 +9,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => "https://github.com/lingoer/mosquitto.git", :tag => "v1.6.12" }
 
   s.ios.deployment_target = '11.0'
+  s.osx.deployment_target = '10.14'
   s.static_framework = true
   s.xcconfig = {
                  'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
