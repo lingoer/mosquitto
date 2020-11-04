@@ -17,6 +17,6 @@ Pod::Spec.new do |s|
   s.source_files = ['*.h', 'lib/*.{c,h}', 'src/deps/*.h']
   s.public_header_files = ['lib/mosquitto.h']
   s.module_map = 'module.modulemap'
-  s.dependency 'openssl-apple-platform', '~> 1.0.2r'
+  s.dependency 'CLOpenSSL', '~> 1.1.10801'
   
 end
