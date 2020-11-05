@@ -11,6 +11,7 @@ callgrind.out.*
 dhat.out.*
 massif.out.*
 vglog*
+.swiftpm/
 
 c/*.test
 cpp/*.test

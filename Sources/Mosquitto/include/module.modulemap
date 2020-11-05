@@ -1,0 +1,5 @@
+module Mosquitto {
+  header "mosquitto.h"
+
+  export *
+}
