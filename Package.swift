@@ -22,7 +22,8 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "Mosquitto",
-            dependencies: ["OpenSSL"], cSettings: [
+//            dependencies: ["OpenSSL"],
+            cSettings: [
                 .define("WITH_THREADING"),
                 .define("WITH_TLS")
             ]),
